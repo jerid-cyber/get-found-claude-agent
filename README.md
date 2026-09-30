@@ -2,7 +2,7 @@
 
 Three tiers of the Get-Found AI agent system, built on the Top 100 Get-Found
 skills library and the 4-Phase System (Discovery, Architecture, Implementation,
-Optimization). Proprietary software by Jerid Wempen / TitanOne.
+Optimization). PolyForm Noncommercial licensed software by Jerid Wempen / TitanOne — free for noncommercial use.
 
 ## Tiers
 
