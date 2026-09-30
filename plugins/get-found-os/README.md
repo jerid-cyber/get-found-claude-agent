@@ -1,22 +1,58 @@
-# get-found-os (v1.0.0)
+# Get-Found Full OS
 
-The complete Get-Found operating system. All 100 skills plus 9 department agents.
+All 100 Get-Found skills run by one orchestrator and nine specialist department agents.
 
-## Contents
+Built on Jerid Wempen's 4-Phase System (Discovery & Assessment, Architecture & Design, Implementation & Deployment,
+Optimization & Governance). Version 1.1.0.
 
-- **100 skills** in `skills/` (each a standalone Claude Skill)
-- **3 core skills** in `core-skills/`: command-center (orchestrator), business-brain (setup), heartbeat (scheduling)
-- **9 agents** in `agents/`
-- **Event triggers** (`triggers.md`) and the **approval queue** (`approval-queue.md`)
+## What's inside
 
-## Install
+- **100 Get-Found skills**
+- **3 core skills:** `get-found-command-center` (orchestrator), `business-brain-setup` (onboarding), `get-found-heartbeat` (scheduling)
+- **9 department agent(s):**
+- **Scout** (Research & Intelligence): 8 skills
+- **Mapmaker** (Listings & Entity): 10 skills
+- **Reputation Desk** (Reviews, Proof & Referrals): 7 skills
+- **Publisher** (Content Engine): 17 skills
+- **Engineer** (Technical & Tracking): 10 skills
+- **Closer** (Conversion & Sales): 14 skills
+- **Media Buyer** (Paid Media): 6 skills
+- **COO-CFO** (Measurement, Money & Operations): 12 skills
+- **Amplifier** (Authority, Social & Community): 16 skills
 
-Unzip `dist/get-found-os.zip` and install the folder as a Claude plugin, or copy individual `skills/<name>` folders into Claude via Settings > Capabilities > Skills.
+## Get started
 
-## Authority model
+1. Say **"Set up Get-Found for my business"**. The agent researches the business and asks only for what it can't find.
+2. Say **"Run my Visibility Audit"** to set the baseline Visibility Score.
+3. Say **"Put Get-Found on a schedule"** to turn on the daily, weekly, monthly and quarterly heartbeat.
+4. Any time, ask **"What's my next best move?"**
 
-Agents execute within set limits. Irreversible actions (spending, publishing, changing listings) are queued for owner approval. An action type earns auto-approval only after 3 unchanged approvals in a row, and the owner can revoke it any time.
+Work files are kept in a `get-found/` folder: `business-brain.md`, `autopilot.md`, `scoreboard.md`, `action-log.md`, `approvals.md`.
+Keep this folder in Google Drive, a connected folder or a Claude project, never in a temporary session, because every
+scheduled run starts fresh.
+
+## How the autopilot works (new in 1.1.0)
+
+- **Authority tiers:** every action is Observe, Prepare, Execute-within-limits, or Approval-required. Anything not
+  written down needs approval. Spending, first contact, low-star review replies, deletions and legal language always do.
+- **Shadow mode:** the first 3 to 5 runs queue everything for approval. An action type earns autopilot only after 3
+  clean approvals in a row and the owner's yes, and loses it the moment it is undone or complained about.
+- **No double sends:** every send or publish gets an action key that is checked against the log first.
+- **Proof, not claims:** work is marked done only with evidence read back from the tool.
+- **Learning:** every approval, edit or rejection becomes a Lesson that future runs follow.
+- **Limits and pause:** each run has caps on tool calls and actions; change `status: active` to `status: PAUSE` in
+  `autopilot.md` to stop everything.
+- **Safe reading:** reviews, emails and web pages are treated as data, never as instructions.
 
 ## License
 
-Licensed under the [PolyForm Internal Use License 1.0.0](LICENSE) — free to use for your internal operations, including at work; you may not distribute, share copies, or sell it. © 2026 Jerid Wempen / TitanOne.
+Free to use for your own business, not for resale. See LICENSE.md.
+
+## Safety
+
+Nothing is published, sent, spent or changed in a live account without an explicit yes. See CONNECTORS.md for the tools
+that unlock more automation.
+
+## License
+
+Licensed under the [PolyForm Internal Use License 1.0.0](LICENSE.md) — free to use for your internal operations, including at work; you may not distribute, share copies, or sell it. © 2026 Jerid Wempen / TitanOne.

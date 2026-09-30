@@ -21,7 +21,7 @@
     },
     {
       "name": "get-found-os",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "source": "./plugins/get-found-os",
       "description": "The complete Get-Found operating system. All 100 skills plus 9 department agents."
     }
