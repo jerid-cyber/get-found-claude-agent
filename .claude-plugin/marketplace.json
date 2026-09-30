@@ -5,7 +5,7 @@
   "owner": {
     "name": "Jerid Wempen / TitanOne"
   },
-  "license": "PolyForm Noncommercial 1.0.0",
+  "license": "PolyForm Internal Use 1.0.0",
   "plugins": [
     {
       "name": "get-found-scout",
