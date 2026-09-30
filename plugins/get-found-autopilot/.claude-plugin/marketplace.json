@@ -5,7 +5,7 @@
   "author": {
     "name": "Jerid Wempen / TitanOne"
   },
-  "license": "PolyForm Noncommercial 1.0.0",
+  "license": "PolyForm Internal Use 1.0.0",
   "plugin": {
     "skills": [
       "skills/gbp-google-maps-optimizer",
