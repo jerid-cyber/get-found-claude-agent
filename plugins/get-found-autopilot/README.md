@@ -19,4 +19,4 @@ Agents execute within set limits. Irreversible actions (spending, publishing, ch
 
 ## License
 
-Licensed under the [PolyForm Noncommercial License 1.0.0](LICENSE) — free for personal learning & tinkering, school or research projects, and fully non-profit operations. Commercial use (selling the software, embedding it in commercial products, or using it at a for-profit job) requires written permission. © 2026 Jerid Wempen / TitanOne.
+Licensed under the [PolyForm Internal Use License 1.0.0](LICENSE) — free to use for your internal operations, including at work; you may not distribute, share copies, or sell it. © 2026 Jerid Wempen / TitanOne.
