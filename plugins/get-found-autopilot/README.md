@@ -19,4 +19,4 @@ Agents execute within set limits. Irreversible actions (spending, publishing, ch
 
 ## License
 
-Copyright (c) 2026 Jerid Wempen / TitanOne. All rights reserved.
+Licensed under the [PolyForm Noncommercial License 1.0.0](LICENSE) — free for personal learning & tinkering, school or research projects, and fully non-profit operations. Commercial use (selling the software, embedding it in commercial products, or using it at a for-profit job) requires written permission. © 2026 Jerid Wempen / TitanOne.
