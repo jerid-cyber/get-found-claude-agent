@@ -1,0 +1,36 @@
+{
+  "name": "get-found-scout",
+  "version": "1.0.0",
+  "description": "Diagnose and plan only. 8 audit/research skills plus the Scout agent \u2014 it never touches live accounts.",
+  "author": {
+    "name": "Jerid Wempen / TitanOne"
+  },
+  "license": "proprietary",
+  "plugin": {
+    "skills": [
+      "skills/get-found-visibility-audit",
+      "skills/conversion-leak-finder",
+      "skills/keyword-prompt-intent-research",
+      "skills/competitor-visibility-gap-report",
+      "skills/helpful-content-quality-audit",
+      "skills/owner-kpi-dashboard",
+      "skills/customer-journey-mapper",
+      "skills/ltv-cac-channel-mix"
+    ],
+    "core_skills": [
+      "core-skills/command-center",
+      "core-skills/business-brain",
+      "core-skills/heartbeat"
+    ],
+    "agents": [
+      "agents/scout-agent.md"
+    ],
+    "docs": [
+      "triggers.md",
+      "approval-queue.md",
+      "README.md",
+      "CHANGELOG.md"
+    ]
+  },
+  "authority": "observe-and-plan-only; never touches live accounts"
+}

@@ -1,0 +1,29 @@
+{
+  "name": "get-found-marketplace",
+  "version": "1.0.0",
+  "description": "Three-tier Get-Found AI agent marketplace: scout, autopilot, and full OS.",
+  "owner": {
+    "name": "Jerid Wempen / TitanOne"
+  },
+  "license": "proprietary",
+  "plugins": [
+    {
+      "name": "get-found-scout",
+      "version": "1.0.0",
+      "source": "./plugins/get-found-scout",
+      "description": "Diagnose and plan only. 8 audit/research skills plus the Scout agent \u2014 it never touches live accounts."
+    },
+    {
+      "name": "get-found-autopilot",
+      "version": "1.0.0",
+      "source": "./plugins/get-found-autopilot",
+      "description": "Researches, builds, publishes after approval, and monitors on schedule. 50 execution skills plus 9 department agents."
+    },
+    {
+      "name": "get-found-os",
+      "version": "1.0.0",
+      "source": "./plugins/get-found-os",
+      "description": "The complete Get-Found operating system. All 100 skills plus 9 department agents."
+    }
+  ]
+}
